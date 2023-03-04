@@ -1,0 +1,75 @@
+@import "~bootstrap/scss/bootstrap";
+@import "salary";
+
+.main-input {
+  border-radius: 20px;
+  border: 2px solid #80808029;
+  padding-left: 15px;
+  outline: unset;
+
+  &:focus {
+    border: 2px solid #ebcd74;
+  }
+}
+
+.radio-button-wrapper {
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+input[type='radio'] {
+  box-shadow: 0 0 0 1px #aaa;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+
+  &::before {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6.6px;
+    top: 1.6px;
+    left: 1.5px;
+    cursor: pointer;
+  }
+
+  &:checked::before {
+    background: #000;
+  }
+}
+
+.form-check-input {
+  cursor: pointer;
+
+  &:checked {
+    background-color: #ebcd74;
+    border-color: #ebcd74
+  }
+
+  &:focus {
+    box-shadow: unset;
+    border-color: unset;
+    background-image: none;
+  }
+}
+
+.main-popover {
+  background: #51519f;
+  border-radius: 0;
+  border: 0;
+  max-width: 240px;
+
+  & * {
+    color: #fff;
+    font-weight: 600;
+  }
+}
